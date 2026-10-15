@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flappy Birds: Sky Adventure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="w">
+<canvas id="c" width="400" height="700"></canvas>
+<div id="menu" class="ov on">
+ <h1>Flappy Birds<br><span style="font-size:22px;color:#fff">Sky Adventure</span></h1>
+ <div id="mc" style="line-height:1.6"></div>
+ <button class="btn" onclick="play()">Играть</button>
+ <button class="btn b" onclick="openShop()">Магазин</button>
+ <button class="btn g" id="snd" onclick="toggleSnd()"></button>
+ <small>Пробел / клик — взмах · E / правая кнопка — способность · P — пауза</small>
+ <div class="dev">Разработчик: <b>Ryuma</b></div>
+</div>
+<div id="shop" class="ov top"></div>
+<div id="pause" class="ov">
+ <h2>Пауза</h2>
+ <button class="btn g" onclick="togglePause()">Продолжить</button>
+ <button class="btn" onclick="play()">Заново</button>
+ <button class="btn b" onclick="toMenu()">В главное меню</button>
+</div>
+<div id="over" class="ov"></div>
+<div id="toast"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
